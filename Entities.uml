@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Entities</OriginalElement>
+  <nodes>
+    <node x="-91.94350364963498" y="873.0575182481753">Entities.Loan</node>
+    <node x="334.0261313868614" y="903.8545985401458">Entities.Stock</node>
+    <node x="217.0" y="328.0">Entities.Book</node>
+    <node x="-280.36291970802915" y="270.02510948905115">Entities.User</node>
+    <node x="246.0" y="-8.506277372262787">Entities.Author</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Entities.Loan" target="Entities.User" relationship="TO_ONE">
+      <point x="-78.56686131385845" y="-162.37459854015094" />
+      <point x="-55.01036496349343" y="815.9272992700729" />
+      <point x="-244.54379562042777" y="815.9272992700729" />
+      <point x="-88.18087591239862" y="235.43503649634545" />
+    </edge>
+    <edge source="Entities.User" target="Entities.Loan" relationship="TO_MANY">
+      <point x="31.30759124088604" y="235.43503649634545" />
+      <point x="-125.05532846714311" y="789.0" />
+      <point x="15.03459854015614" y="789.0" />
+      <point x="-8.521897810208884" y="-166.49489051095384" />
+    </edge>
+    <edge source="Entities.Loan" target="Entities.Book" relationship="TO_ONE">
+      <point x="87.61824817519255" y="-166.49489051095384" />
+      <point x="111.17474452555757" y="789.0" />
+      <point x="274.6129927007354" y="789.0" />
+      <point x="-75.88700729926461" y="198.3524087591186" />
+    </edge>
+    <edge source="Entities.Book" target="Entities.Author" relationship="TO_ONE">
+      <point x="0.0" y="-200.0" />
+      <point x="0.0" y="128.0" />
+    </edge>
+    <edge source="Entities.Stock" target="Entities.Book" relationship="TO_ONE">
+      <point x="0.0" y="-92.0" />
+      <point x="437.0261313868614" y="815.9272992700729" />
+      <point x="436.6778102189835" y="815.9272992700729" />
+      <point x="86.1778102189835" y="198.3524087591186" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5824829931972789" showDependencies="true" x="500.4048989933053" y="-578.4293797891323" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
